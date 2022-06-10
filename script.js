@@ -64,33 +64,35 @@ if (selectedPlate != undefined && selectedDrink != undefined && selectedDesert !
 
 }
 
-// function closeOrder(){
-//     const name = prompt("Digite aqui o seu nome");
+function closeOrder(){
+    const name = prompt("Digite aqui o seu nome");
 
-//     const address = prompt("Agora digite o seu endereço");
+    const address = prompt("Agora digite o seu endereço");
 
-//     const chosenPlate = selectedPlate.querySelector(".product-title");
+    const chosenPlate = selectedPlate.querySelector(".product-title");
 
-//     const chosenDrink = selectedDrink.querySelector(".product-title");
+    const chosenDrink = selectedDrink.querySelector(".product-title");
 
-//     const chosenDesert = selectedDesert.querySelector(".product-title");
+    const chosenDesert = selectedDesert.querySelector(".product-title");
 
-//     const platePrice = = chosenPlate.innerHTML.replace(',','.')
+    const platePrice = selectedPlate.querySelector(".product-price").innerHTML.replace('R$ ','').replace(',','.');
 
-//     console.log(platePrice)
+    const drinkPrice = selectedDrink.querySelector(".product-price").innerHTML.replace('R$ ','').replace(',','.');
 
-//     const totalCost 
+    const desertPrice = selectedDesert.querySelector(".product-price").innerHTML.replace('R$ ','').replace(',','.');
+
+    const totalCost = Number(platePrice) + Number(drinkPrice) + Number(desertPrice);
+
+    console.log(Number(platePrice))
+    console.log(totalCost)
     
+    // const message = `Olá, gostaria de fazer o pedido:
+    // - Prato: ${chosenPlate.innerHTML}
+    // - Bebida: ${chosenDrink.innerHTML}
+    // - Sobremesa: ${chosenDesert.innerHTML}
+    // Total: ${totalCost}
     
-    
-    
-//     // const message = `Olá, gostaria de fazer o pedido:
-//     // - Prato: ${chosenPlate.innerHTML}
-//     // - Bebida: ${chosenDrink.innerHTML}
-//     // - Sobremesa: ${chosenDesert.innerHTML}
-//     // Total: ${totalCost}
-    
-//     // Nome: ${name}
-//     // Endereço: ${address}`
+    // Nome: ${name}
+    // Endereço: ${address}`
 
-// }
+}
