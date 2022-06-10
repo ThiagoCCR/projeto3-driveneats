@@ -2,9 +2,10 @@
 
 body{
     width: 414px;
-    height: 100%;
+    height: 1026px;
     box-sizing: border-box;
     background-color: #E5E5E5;
+    overflow-y: hidden;
 }
 
 /*HEADER */
@@ -42,7 +43,7 @@ h2{
 
 .main{
     width: 100%;
-    margin-top: 120px;
+    margin-top: 270px;
 }
 
 h3{
@@ -65,7 +66,7 @@ h3{
 
 .product-box{
     background-color: #FFFFFF;
-    width: 162px;
+    width: 216px;
     border-radius: 9px;
     display: flex;
     flex-direction: column;
@@ -127,14 +128,22 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 .close-order-button{
     height: 61px;
-    width: 364px;
+    width: 314px;
     border-radius: 35px;
     background-color: #CBCBCB;
     font-size: 20px;
     color: #FFFFFF;
 }
 
+/* JAVASCRIPT STYLE */
+
+.selected-box{
+    border: 5px solid green;
+}
