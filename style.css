@@ -135,7 +135,7 @@ h3{
     left: 0;
 }
 
-.close-order-button{
+.button{
     height: 61px;
     width: 314px;
     border-radius: 35px;
@@ -147,16 +147,25 @@ h3{
 /* JAVASCRIPT STYLE */
 
 .selected-box{
-    border: 5px solid green;
+    border: 5px solid #32B72F;
 }
 
 .check-icon{
     position: absolute;
     bottom: 0;
     right: 0;
-    color: green;
+    color: #32B72F;
 }
 
 .hidden{
     display:none;
+}
+
+.close-order-button{
+    height: 61px;
+    width: 314px;
+    border-radius: 35px;
+    background-color: #32B72F;
+    font-size: 20px;
+    color: #FFFFFF;
 }
