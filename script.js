@@ -64,6 +64,33 @@ if (selectedPlate != undefined && selectedDrink != undefined && selectedDesert !
 
 }
 
-function closeOrder(){
+// function closeOrder(){
+//     const name = prompt("Digite aqui o seu nome");
+
+//     const address = prompt("Agora digite o seu endereço");
+
+//     const chosenPlate = selectedPlate.querySelector(".product-title");
+
+//     const chosenDrink = selectedDrink.querySelector(".product-title");
+
+//     const chosenDesert = selectedDesert.querySelector(".product-title");
+
+//     const platePrice = = chosenPlate.innerHTML.replace(',','.')
+
+//     console.log(platePrice)
+
+//     const totalCost 
     
-}
+    
+    
+    
+//     // const message = `Olá, gostaria de fazer o pedido:
+//     // - Prato: ${chosenPlate.innerHTML}
+//     // - Bebida: ${chosenDrink.innerHTML}
+//     // - Sobremesa: ${chosenDesert.innerHTML}
+//     // Total: ${totalCost}
+    
+//     // Nome: ${name}
+//     // Endereço: ${address}`
+
+// }
