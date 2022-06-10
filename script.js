@@ -1,37 +1,46 @@
 function selectBox(){
-    let selectedElement = event.currentTarget;
+    const selectedElement = event.currentTarget;
     const selectedElementPlate = selectedElement.classList.contains("plate");
     const selectedElementDrink = selectedElement.classList.contains("drink");
     const selectedElementDesert = selectedElement.classList.contains("desert");
+    const checkedIcon = selectedElement.querySelector(".check-icon");
 
     if (selectedElementPlate === true){
-        let caixas = document.querySelectorAll(".plate");
+        let boxes = document.querySelectorAll(".plate");
 
-        for(let i=0; i<caixas.length; i++){
-            caixas[i].classList.remove("selected-box");
+        for(let i=0; i<boxes.length; i++){
+            boxes[i].classList.remove("selected-box");
+            let selectedBoxes = boxes[i].querySelector(".check-icon");
+            selectedBoxes.classList.add("hidden");
         }
         selectedElement.classList.toggle("selected-box");
-
+        checkedIcon.classList.remove("hidden");
     }
 
     if (selectedElementDrink === true){
-        let caixas = document.querySelectorAll(".drink");
+        let boxes = document.querySelectorAll(".drink");
 
-        for(let i=0; i<caixas.length; i++){
-            caixas[i].classList.remove("selected-box");
+        for(let i=0; i<boxes.length; i++){
+            boxes[i].classList.remove("selected-box");
+            let selectedBoxes = boxes[i].querySelector(".check-icon");
+            selectedBoxes.classList.add("hidden");
         }
         selectedElement.classList.toggle("selected-box");
+        checkedIcon.classList.remove("hidden");
 
     }
 
     if (selectedElementDesert === true){
-        let caixas = document.querySelectorAll(".desert");
+        let boxes = document.querySelectorAll(".desert");
 
-        for(let i=0; i<caixas.length; i++){
-            caixas[i].classList.remove("selected-box");
+        for(let i=0; i<boxes.length; i++){
+            boxes[i].classList.remove("selected-box");
+            let selectedBoxes = boxes[i].querySelector(".check-icon");
+            selectedBoxes.classList.add("hidden");
         }
         selectedElement.classList.toggle("selected-box");
-
+        checkedIcon.classList.remove("hidden");
+        
     }
 
 }
