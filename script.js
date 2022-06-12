@@ -81,18 +81,19 @@ function closeOrder(){
 
     const desertPrice = selectedDesert.querySelector(".product-price").innerHTML.replace('R$ ','').replace(',','.');
 
-    const totalCost = Number(platePrice) + Number(drinkPrice) + Number(desertPrice);
+    const totalCost = (Number(platePrice) + Number(drinkPrice) + Number(desertPrice)).toFixed(2);
+    
+    const message = `Olá, gostaria de fazer o pedido:
+    - Prato: ${chosenPlate.innerHTML}
+    - Bebida: ${chosenDrink.innerHTML}
+    - Sobremesa: ${chosenDesert.innerHTML}
+    Total: ${totalCost}
 
-    console.log(Number(platePrice))
-    console.log(totalCost)
-    
-    // const message = `Olá, gostaria de fazer o pedido:
-    // - Prato: ${chosenPlate.innerHTML}
-    // - Bebida: ${chosenDrink.innerHTML}
-    // - Sobremesa: ${chosenDesert.innerHTML}
-    // Total: ${totalCost}
-    
-    // Nome: ${name}
-    // Endereço: ${address}`
+    Nome: ${name}
+    Endereço: ${address}` 
+
+    console.log(message)
+
+    window.open(`https://wa.me/5535991597374?text=${encodeURIComponent(message)}`)
 
 }

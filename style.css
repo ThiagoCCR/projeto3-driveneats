@@ -22,6 +22,7 @@ body{
     top: 0;
     left: 0;
     padding-left: 10px;
+    z-index: 1;
 }
 
 h1{
@@ -43,7 +44,7 @@ h2{
 
 .main{
     width: 100%;
-    margin-top: 270px;
+    margin-top: 135px;
 }
 
 h3{
