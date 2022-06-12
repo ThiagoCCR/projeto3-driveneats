@@ -220,7 +220,40 @@
     </div>
     <div class="footer">
         <button class="button" disabled>Selecione os 3 itens </br>para fechar o pedido</button>
-        <button class="close-order-button hidden" onclick="closeOrder()">Fechar pedido</button>
+        <button class="close-order-button hidden" onclick="showScreen()">Fechar pedido</button>
+    </div>
+    <div class="confirmation-screen hide-confirmation">
+        <div>
+            <div>
+                <p class="title-confirm">Confirme seu pedido</p>
+            </div>
+            <div class="product-text-confirm">
+                <div>
+                    <div class="plate-confirm-text"></div>
+                    <div class="plate-confirm-price"></div>
+                </div>
+                <div>
+                    <div class="drink-confirm-text"></div>
+                    <div class="drink-confirm-price"></div>
+                </div>
+                <div>
+                    <div class="desert-confirm-text"></div>
+                    <div class="desert-confirm-price"></div>
+                </div>
+                <div class="total-cost">
+                    <div>
+                        <p>TOTAL</p>
+                    </div>
+                    <div class=total-cost-number></div>
+                </div>
+            </div>
+            <div class="confirm-button" onclick="closeOrder()">
+                <p>Tudo certo, pode pedir!</p>
+            </div>
+            <div class="cancel-button">
+                <p>Cancelar</p>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

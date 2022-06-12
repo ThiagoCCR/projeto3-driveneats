@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap');
 
-body{
+* {
+    box-sizing: border-box;
+}
+
+
+body {
     width: 414px;
     height: 1026px;
-    box-sizing: border-box;
     background-color: #E5E5E5;
-    overflow-y: hidden;
 }
 
 /*HEADER */
 
-.header{
+.header {
     width: 100%;
-    height:92px;
+    height: 92px;
     background-color: #CF2B2B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -25,14 +28,14 @@ body{
     z-index: 1;
 }
 
-h1{
+h1 {
     font-family: 'Righteous', cursive;
     font-size: 44px;
     color: #FFFFFF;
     font-weight: 400;
 }
 
-h2{
+h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: #FFFFFF;
@@ -42,15 +45,16 @@ h2{
 
 /* MAIN CONTENT */
 
-.main{
+.main {
     width: 100%;
     margin-top: 135px;
+    height: 1026px;
 }
 
-h3{
+h3 {
     font-family: 'Righteous', cursive;
     font-size: 25px;
-    color:#333333;
+    color: #333333;
     font-weight: 400;
     margin-bottom: 15px;
     margin-left: 10px;
@@ -58,16 +62,17 @@ h3{
 
 /* PRODUCT-BOX */
 
-.product-row{
+.product-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     overflow-x: scroll;
 }
 
-.product-box{
+.product-box {
     background-color: #FFFFFF;
-    width: 216px;
+    width: 210px;
+    height: 216px;
     border-radius: 9px;
     display: flex;
     flex-direction: column;
@@ -82,13 +87,19 @@ h3{
     position: relative;
 }
 
-.product-box > :nth-child(2){
-    margin-top:10px;
+.product-box :nth-child(2) {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.product-text{
+.product-box img {
+    width: 144px;
+    height: 87px;
+
+}
+
+.product-text {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 15px;
@@ -96,14 +107,14 @@ h3{
     margin: 8px 0;
 }
 
-.product-price{
+.product-price {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
 
-.product-title{
+.product-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -112,19 +123,21 @@ h3{
 
 /* ROWS */
 
-.plate-container{
+.plate-container {
     margin-bottom: 20px;
 }
-.drink-container{
+
+.drink-container {
     margin-bottom: 20px;
 }
-.desert-container{
+
+.desert-container {
     margin-bottom: 20px;
 }
 
 /* FOOTER */
 
-.footer{
+.footer {
     height: 92px;
     background-color: #FFFFFF;
     width: 100%;
@@ -136,7 +149,7 @@ h3{
     left: 0;
 }
 
-.button{
+.button {
     height: 61px;
     width: 314px;
     border-radius: 35px;
@@ -147,22 +160,22 @@ h3{
 
 /* JAVASCRIPT STYLE */
 
-.selected-box{
+.selected-box {
     border: 5px solid #32B72F;
 }
 
-.check-icon{
+.check-icon {
     position: absolute;
     bottom: 0;
     right: 0;
     color: #32B72F;
 }
 
-.hidden{
-    display:none;
+.hidden {
+    display: none;
 }
 
-.close-order-button{
+.close-order-button {
     height: 61px;
     width: 314px;
     border-radius: 35px;
@@ -170,3 +183,90 @@ h3{
     font-size: 20px;
     color: #FFFFFF;
 }
+
+/* CONFIRMATION SCREEN */
+
+.confirmation-screen {
+    width: 414px;
+    height: 1026px;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide-confirmation{
+    display:none;
+}
+
+.confirmation-screen>div {
+    width: 377px;
+    height: 353px;
+    background-color: #50D074;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-confirm {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.product-text-confirm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    width:330px;
+    height: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.product-text-confirm > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    height: 50px;
+}
+
+.confirm-button {
+    width: 329px;
+    height: 52px;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #50D074;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.cancel-button {
+    width: 333px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size:20px;
+    font-weight: 700;
+}
+
