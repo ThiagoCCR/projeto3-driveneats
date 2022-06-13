@@ -166,8 +166,8 @@ h3 {
 
 .check-icon {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 4px;
+    right: 4px;
     color: #32B72F;
 }
 
