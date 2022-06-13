@@ -252,6 +252,28 @@ h3 {
     height: 50px;
 }
 
+.product-text-confirm div :nth-child(odd){
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width:50%;
+    height: 50px;
+}
+
+.product-text-confirm div :nth-child(even){
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width:50%;
+    height: 50px;
+}
+
+.total-cost{
+font-weight: 700;
+}
+
 .confirm-button {
     width: 329px;
     height: 52px;
