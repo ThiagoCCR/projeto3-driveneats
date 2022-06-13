@@ -138,6 +138,13 @@ function showScreen(){
 
 }
 
+function hideScreen(){
+    const confirmationScreen = document.querySelector(".confirmation-screen");
+    confirmationScreen.classList.add("hide-confirmation");
+
+
+}
+
 function closeOrder(){
 
     const name = prompt("Digite aqui o seu nome");
