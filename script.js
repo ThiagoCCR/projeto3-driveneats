@@ -162,7 +162,7 @@ function closeOrder(){
     - Prato: ${chosenPlate.innerHTML}
     - Bebida: ${chosenDrink.innerHTML}
     - Sobremesa: ${chosenDesert.innerHTML}
-    Total: ${totalCost}
+    Total: R$ ${totalCost}
 
     Nome: ${name}
     Endereço: ${address}` 
